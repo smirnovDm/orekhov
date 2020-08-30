@@ -85,7 +85,3 @@
         name: "TheFooter"
     }
 </script>
-
-<style scoped>
-
-</style>

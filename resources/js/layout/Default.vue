@@ -1,5 +1,9 @@
 <template>
-    <router-view></router-view>
+    <div>
+        <TheHeader/>
+        <router-view></router-view>
+        <TheFooter/>
+    </div>
 </template>
 
 <script>
@@ -7,7 +11,3 @@
         name: "Layout"
     }
 </script>
-
-<style scoped>
-
-</style>

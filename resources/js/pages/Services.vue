@@ -1,17 +1,20 @@
 <template>
     <main>
-        <SliderAreaOne/>
+        <SliderAreaTwo/>
         <ServicesArea/>
         <OfferServices/>
         <CallUs/>
         <CompanyAchievement/>
-        <AboutAreaTwo/>
         <MapArea/>
     </main>
 </template>
 
 <script>
     export default {
-        name: "Main"
+        name: "Services"
     }
 </script>
+
+<style scoped>
+
+</style>
