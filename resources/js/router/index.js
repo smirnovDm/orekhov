@@ -1,23 +1,20 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Main from './Main';
-import Flowers from './flowers/router.js';
-import Layout from './layout/Layout';
+import Main from '../pages/Main';
+import Default from '../layout/Default';
 
 Vue.use(Router);
 
 const routes = [
-    { path: '', redirect: 'main' },
     {
-        path: '/main',
-        component: Layout,
+        path: '/',
+        component: Default,
         children: [{
             path: '',
             name: 'main',
             component: Main,
         }],
     },
-    ...Flowers,
 ];
 
 export const router = new Router({
