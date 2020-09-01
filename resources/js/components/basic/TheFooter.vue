@@ -8,8 +8,9 @@
                         <div class="single-footer-caption mb-50">
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
-                                <div class="footer-logo mb-35">
-                                    <a href="index.html"><img src="img/logo/logo2_footer.png" alt=""></a>
+                                <div class="footer-tittle">
+                                    <img src="img/logo/finalogo3.png" width="70px" alt="">
+                                    <h4 style="display: inline-block">Express</h4>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -56,7 +57,7 @@
             </div>
         </div>
         <!-- footer-bottom area -->
-        <div class="footer-bottom-area section-bg2" data-background="img/gallery/footer-bg.png">
+        <div class="footer-bottom-area section-bg2">
             <div class="container">
                 <div class="footer-border">
                     <div class="row d-flex align-items-center">
@@ -66,8 +67,7 @@
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     Copyright &copy;
                                     All rights reserved |
-                                    This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    This template is made with Colorlib
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
                             </div>

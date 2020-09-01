@@ -13,16 +13,19 @@
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-25">
-                            <h2>About company</h2>
+                            <h2>О нас</h2>
                         </div>
                         <p class="mb-20">
-                            The automated process starts as soon as your clothes go into the machine. The outcome is
-                            gleaming clothes!
+                            Опыт и профессионализм не вызывает сомнений.
+                            Великолепный сервис и внимание к каждому клиенту-наше кредо.
                         </p>
-                        <p class="mb-30">The automated process starts as soon as your clothes go into the machine.
-                            The outcome is gleaming clothes!</p>
-
-                        <a href="about.html" class="btn">About Us</a>
+                        <p class="mb-30">
+                            Сотрудничество с нашей компанией-это не только комфорт и спокойствие во время поездки,но и доступные цены на все виды услуг.
+                            Большинство наших клиентов после знакомства с нашей компанией, становятся нашими постоянными клиентами.
+                        </p>
+                        <router-link to="/about" class="btn">
+                            О нас
+                        </router-link>
                     </div>
                 </div>
             </div>
