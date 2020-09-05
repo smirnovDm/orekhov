@@ -1,6 +1,6 @@
 <template>
     <main>
-        <SliderAreaTwo/>
+<!--        <SliderAreaTwo/>-->
         <ContactArea/>
     </main>
 </template>
@@ -10,7 +10,3 @@
         name: "Contact"
     }
 </script>
-
-<style scoped>
-
-</style>

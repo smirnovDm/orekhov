@@ -67,7 +67,3 @@
         name: "ContactArea"
     }
 </script>
-
-<style scoped>
-
-</style>

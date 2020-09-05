@@ -21,7 +21,7 @@
                                     <router-link to="/about" tag="li" active-class="active">
                                         <a>О нас</a>
                                     </router-link>
-                                    <router-link to="/services" tag="li" active-class="active">
+                                    <router-link to="/book-trip" tag="li" active-class="active">
                                         <a>Заказать поездку</a>
                                     </router-link>
                                     <router-link to="/contact" tag="li" active-class="active">
