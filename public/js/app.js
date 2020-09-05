@@ -2289,9 +2289,9 @@ var staticRenderFns = [
           _c("div", { staticClass: "row justify-content-center" }, [
             _c("div", { staticClass: "col-xl-7 col-lg-8" }, [
               _c("div", { staticClass: "section-tittle text-center mb-55" }, [
-                _c("span", { staticClass: "element" }, [_vm._v("Our Process")]),
+                _c("span", { staticClass: "element" }, [_vm._v("Наш процесс")]),
                 _vm._v(" "),
-                _c("h2", [_vm._v("This is how we work")])
+                _c("h2", [_vm._v("Как мы работаем")])
               ])
             ])
           ]),
@@ -19190,7 +19190,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\OSPanel\domains\orekhov\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Program files\OpenServer\domains\orekhov.test\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
