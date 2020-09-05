@@ -6,13 +6,13 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-8 col-lg-9 col-md-7">
                         <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>Call us for a service</h2>
-                            <p>We deliver the goods to the most complicated places on earth</p>
+                            <h2>Звоните будем рады Вас услышать</h2>
+                            <p>Выполняем любые виды перевозок по Украине</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-5">
                         <router-link to="/contact" class="btn wantToWork-btn">
-                            <img src="img/icon/call2.png" alt=""> Learn More
+                            <img src="img/icon/call2.png" alt=""> Контакты
                         </router-link>
                     </div>
                 </div>

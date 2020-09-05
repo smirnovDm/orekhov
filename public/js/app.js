@@ -312,6 +312,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AboutAreaTwo"
 });
@@ -671,6 +674,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1377,11 +1385,17 @@ var staticRenderFns = [
             _c("div", { staticClass: "col-xl-4 col-lg-4 col-md-4 col-sm-6" }, [
               _c("div", { staticClass: "single-footer-caption mb-50" }, [
                 _c("div", { staticClass: "single-footer-caption mb-30" }, [
-                  _c("div", { staticClass: "footer-logo mb-35" }, [
-                    _c("a", { attrs: { href: "index.html" } }, [
-                      _c("img", {
-                        attrs: { src: "img/logo/logo2_footer.png", alt: "" }
-                      })
+                  _c("div", { staticClass: "footer-tittle" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "img/logo/finalogo3.png",
+                        width: "70px",
+                        alt: ""
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { display: "inline-block" } }, [
+                      _vm._v("Express")
                     ])
                   ]),
                   _vm._v(" "),
@@ -1481,45 +1495,23 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "footer-bottom-area section-bg2",
-          attrs: { "data-background": "img/gallery/footer-bg.png" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "footer-border" }, [
-              _c("div", { staticClass: "row d-flex align-items-center" }, [
-                _c("div", { staticClass: "col-xl-12 " }, [
-                  _c("div", { staticClass: "footer-copy-right text-center" }, [
-                    _c("p", [
-                      _vm._v(
-                        "\n                                Copyright ©\n                                All rights reserved |\n                                This template is made with "
-                      ),
-                      _c("i", {
-                        staticClass: "fa fa-heart",
-                        attrs: { "aria-hidden": "true" }
-                      }),
-                      _vm._v(" by "),
-                      _c(
-                        "a",
-                        {
-                          attrs: {
-                            href: "https://colorlib.com",
-                            target: "_blank"
-                          }
-                        },
-                        [_vm._v("Colorlib")]
-                      )
-                    ])
+      _c("div", { staticClass: "footer-bottom-area section-bg2" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "footer-border" }, [
+            _c("div", { staticClass: "row d-flex align-items-center" }, [
+              _c("div", { staticClass: "col-xl-12 " }, [
+                _c("div", { staticClass: "footer-copy-right text-center" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n                                Copyright ©\n                                All rights reserved |\n                                This template is made with Colorlib\n                                "
+                    )
                   ])
                 ])
               ])
             ])
           ])
-        ]
-      )
+        ])
+      ])
     ])
   }
 ]
@@ -1695,55 +1687,72 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "section",
+    {
+      staticClass: "about-area2 pb-bottom",
+      staticStyle: { "margin-top": "60px" }
+    },
+    [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row align-items-center" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-4 col-md-12" }, [
+            _c(
+              "div",
+              { staticClass: "about-caption mb-50" },
+              [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-20" }, [
+                  _vm._v(
+                    "\n                        Опыт и профессионализм не вызывает сомнений.\n                        Великолепный сервис и внимание к каждому клиенту-наше кредо.\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-30" }, [
+                  _vm._v(
+                    "\n                        Сотрудничество с нашей компанией-это не только комфорт и спокойствие во время поездки,но и доступные цены на все виды услуг.\n                        Большинство наших клиентов после знакомства с нашей компанией, становятся нашими постоянными клиентами.\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  { staticClass: "btn", attrs: { to: "/about" } },
+                  [
+                    _vm._v(
+                      "\n                        О нас\n                    "
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      {
-        staticClass: "about-area2 pb-bottom",
-        staticStyle: { "margin-top": "60px" }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row align-items-center" }, [
-            _c("div", { staticClass: "col-lg-6 col-md-12" }, [
-              _c("div", { staticClass: "about-img " }, [
-                _c("img", { attrs: { src: "img/gallery/about1.png", alt: "" } })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-lg-4 col-md-12" }, [
-              _c("div", { staticClass: "about-caption mb-50" }, [
-                _c("div", { staticClass: "section-tittle mb-25" }, [
-                  _c("h2", [_vm._v("About company")])
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "mb-20" }, [
-                  _vm._v(
-                    "\n                        The automated process starts as soon as your clothes go into the machine. The outcome is\n                        gleaming clothes!\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "mb-30" }, [
-                  _vm._v(
-                    "The automated process starts as soon as your clothes go into the machine.\n                        The outcome is gleaming clothes!"
-                  )
-                ]),
-                _vm._v(" "),
-                _c("a", { staticClass: "btn", attrs: { href: "about.html" } }, [
-                  _vm._v("About Us")
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "col-lg-6 col-md-12" }, [
+      _c("div", { staticClass: "about-img " }, [
+        _c("img", { attrs: { src: "img/gallery/about1.png", alt: "" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "section-tittle mb-25" }, [
+      _c("h2", [_vm._v("О нас")])
+    ])
   }
 ]
 render._withStripped = true
@@ -1798,7 +1807,7 @@ var render = function() {
                       _c("img", {
                         attrs: { src: "img/icon/call2.png", alt: "" }
                       }),
-                      _vm._v(" Learn More\n                    ")
+                      _vm._v(" Контакты\n                    ")
                     ]
                   )
                 ],
@@ -1818,11 +1827,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-xl-8 col-lg-9 col-md-7" }, [
       _c("div", { staticClass: "wantToWork-caption wantToWork-caption2" }, [
-        _c("h2", [_vm._v("Call us for a service")]),
+        _c("h2", [_vm._v("Звоните будем рады Вас услышать")]),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("We deliver the goods to the most complicated places on earth")
-        ])
+        _c("p", [_vm._v("Выполняем любые виды перевозок по Украине")])
       ])
     ])
   }
@@ -2395,28 +2402,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "slider-area hero-overly" }, [
-      _c("div", { staticClass: "slider-active" }, [
-        _c(
-          "div",
-          {
-            staticClass: "single-slider slider-height d-flex align-items-center"
-          },
-          [
-            _c("div", { staticClass: "container" }, [
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-xl-7 col-lg-9 col-md-10 col-sm-9" },
-                  [
-                    _c("div", { staticClass: "hero__caption" }, [
+  return _c("section", { staticClass: "slider-area hero-overly" }, [
+    _c("div", { staticClass: "slider-active" }, [
+      _c(
+        "div",
+        {
+          staticClass: "single-slider slider-height d-flex align-items-center"
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-xl-7 col-lg-9 col-md-10 col-sm-9" },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "hero__caption" },
+                    [
                       _c(
                         "h1",
                         {
@@ -2440,28 +2443,34 @@ var staticRenderFns = [
                       ),
                       _vm._v(" "),
                       _c(
-                        "a",
+                        "router-link",
                         {
                           staticClass: "btn hero-btn",
                           attrs: {
-                            href: "#",
+                            to: "/services",
                             "data-animation": "fadeInLeft",
                             "data-delay": "0.7s"
                           }
                         },
-                        [_vm._v("Заказ поездки")]
+                        [
+                          _vm._v(
+                            "\n                                Заказ поездки\n                            "
+                          )
+                        ]
                       )
-                    ])
-                  ]
-                )
-              ])
+                    ],
+                    1
+                  )
+                ]
+              )
             ])
-          ]
-        )
-      ])
+          ])
+        ]
+      )
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

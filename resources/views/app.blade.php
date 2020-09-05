@@ -7,6 +7,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Express</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
         <!-- CSS here -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
