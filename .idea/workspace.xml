@@ -23,27 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d967e9f-988e-4089-9f81-9647718ee7f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/BookTrip.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/comment_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/comment_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/comment_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/learn_about_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/single_blog_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/single_blog_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/single_blog_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/single_blog_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/single_blog_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/blog/slide_thumb_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/basic/TheFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/basic/TheFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/section/AboutAreaTwo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/section/AboutAreaTwo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/section/CallUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/section/CallUs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/section/OfferServices.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/section/OfferServices.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/section/SliderAreaOne.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/section/SliderAreaOne.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/basic/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/basic/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/section/ContactArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/section/ContactArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/Contact.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/Contact.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/Services.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +211,8 @@
       <workItem from="1598765531361" duration="869000" />
       <workItem from="1598766412250" duration="1108000" />
       <workItem from="1598777689387" duration="14479000" />
-      <workItem from="1598978181830" duration="4242000" />
+      <workItem from="1598978181830" duration="4615000" />
+      <workItem from="1599142575346" duration="6921000" />
     </task>
     <servers />
   </component>

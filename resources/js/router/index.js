@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import Main from '../pages/Main';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
-import Services from '../pages/Services';
+import BookTrip from '../pages/BookTrip';
 import Default from '../layout/Default';
 
 Vue.use(Router);
@@ -37,12 +37,12 @@ const routes = [
         }],
     },
     {
-        path: '/services',
+        path: '/book-trip',
         component: Default,
         children: [{
             path: '',
-            name: 'services',
-            component: Services,
+            name: 'BookTrip',
+            component: BookTrip,
         }],
     },
 ];

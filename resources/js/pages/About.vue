@@ -1,6 +1,6 @@
 <template>
     <main>
-        <SliderAreaTwo/>
+<!--        <SliderAreaTwo/>-->
         <AboutAreaTwo/>
         <ServicesArea/>
         <CallUs/>
