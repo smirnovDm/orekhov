@@ -12,9 +12,28 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
+                                        Откуда?
                                         <multiselect
                                             v-if="loadAll"
-                                            v-model="selectedCity"
+                                            v-model="selectedCityFrom"
+                                            :options="loadAll"
+                                            track-by="id"
+                                            label="name"
+                                            :searchable="true"
+                                            selectLabel="Нажмите что бы выбрать"
+                                            deselectLabel="Нажмите что бы удалить"
+                                            selectedLabel="Выбрано"
+                                            placeholder="Выбрать направление"
+                                            @input="onChange"
+                                        ></multiselect>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Куда?
+                                        <multiselect
+                                            v-if="loadAll"
+                                            v-model="selectedCityTo"
                                             :options="loadAll"
                                             track-by="id"
                                             label="name"
@@ -24,22 +43,13 @@
                                             deselectLabel="Нажмите что бы удалить"
                                             selectedLabel="Выбрано"
                                             placeholder="Выбрать направление"
+                                            @input="onChange"
                                         ></multiselect>
-                                    </div>
+                                        </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email"
-                                               onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                    </div>
-                                </div>
+<!--                                                          Generic-->
                                 <div class="col-12">
-                                    <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text"
-                                               onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
-                                    </div>
+                                    <booking-form :type="formType"></booking-form>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
@@ -79,14 +89,17 @@
 <script>
     import Multiselect from 'vue-multiselect'
     import {mapGetters, mapActions} from 'vuex';
+    import BookingForm from "../components/booking-form/booking-form";
     export default {
         name: "BookTrip",
-        components: {Multiselect},
+        components: {BookingForm, Multiselect},
         data() {
             return {
                 value: null,
                 options: ['list', 'of', 'options'],
-                selectedCity: null,
+                selectedCityFrom: "",
+                selectedCityTo: "",
+                formType: 'default',
             }
         },
         computed: {
@@ -101,6 +114,17 @@
             ...mapActions({
                getCities: 'cities/load',
             }),
+            onChange(){
+                if(this.selectedCityFrom && this.selectedCityTo){
+                    let cities = [];
+                    cities.push(this.selectedCityFrom.name);
+                    cities.push(this.selectedCityTo.name);
+                    if(cities.indexOf('Орехов') != -1 && cities.indexOf('Запорожье') != -1){
+                        return this.formType = 'special';
+                    }
+                }
+                return this.formType = 'default';
+            },
         }
     }
 </script>
