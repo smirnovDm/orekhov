@@ -1,6 +1,8 @@
+require('./bootstrap');
 import { router } from './router';
 import Vue from 'vue';
 import App from "./components/App";
+import store from "./store";
 
 const files = require.context('./', true, /\.vue$/i)
 
@@ -8,5 +10,6 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
 
 const app = new Vue({
     router,
+    store,
     render: h => h(App),
 }).$mount('#app');

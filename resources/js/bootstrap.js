@@ -1,5 +1,5 @@
+import axios from "axios";
 window._ = require('lodash');
-
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -19,9 +19,15 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
+window.axios = axios;
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common = {
+    'X-Requested-With': 'XMLHttpRequest',
+    'Content-Type': 'application/json',
+    'X-CSRF-TOKEN': document.head.querySelector('meta[name="csrf-token"]')
+        .content,
+};
+
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

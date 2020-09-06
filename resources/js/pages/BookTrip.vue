@@ -13,12 +13,17 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <multiselect
-                                            v-model="value"
-                                            :options="options"
+                                            v-if="loadAll"
+                                            v-model="selectedCity"
+                                            :options="loadAll"
+                                            track-by="id"
+                                            label="name"
+                                            name="city_id"
+                                            :searchable="true"
                                             selectLabel="Нажмите что бы выбрать"
                                             deselectLabel="Нажмите что бы удалить"
                                             selectedLabel="Выбрано"
-                                            placeholder="Выберете направление"
+                                            placeholder="Выбрать направление"
                                         ></multiselect>
                                     </div>
                                 </div>
@@ -73,15 +78,29 @@
 
 <script>
     import Multiselect from 'vue-multiselect'
-
+    import {mapGetters, mapActions} from 'vuex';
     export default {
         name: "BookTrip",
         components: {Multiselect},
         data() {
             return {
                 value: null,
-                options: ['list', 'of', 'options']
+                options: ['list', 'of', 'options'],
+                selectedCity: null,
             }
+        },
+        computed: {
+            ...mapGetters({
+                loadAll: 'cities/all',
+            })
+        },
+        created(){
+            this.getCities();
+        },
+        methods: {
+            ...mapActions({
+               getCities: 'cities/load',
+            }),
         }
     }
 </script>

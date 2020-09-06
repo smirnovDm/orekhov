@@ -11,7 +11,7 @@ class CitySeeder extends Seeder
      */
     public function run()
     {
-        $cities = collect([
+         collect([
             new City(['name' => 'Орехов']),
             new City(['name' => 'Запорожье']),
             new City(['name' => 'Днепр']),
