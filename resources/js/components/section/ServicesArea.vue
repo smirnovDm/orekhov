@@ -1,12 +1,11 @@
 <template>
     <!--? Services Area Start -->
-    <section class="services-area pt-top border-bottom pb-20 mb-60">
+    <section class="services-area pt-top border-bottom pb-40 mb-60">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <span class="element">Наш процесс</span>
-                        <h2>Как мы работаем</h2>
+                        <h2>Наши преимущества</h2>
                     </div>
                 </div>
             </div>
@@ -17,9 +16,8 @@
                             <img src="img/icon/services-icon1.svg" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">We collect your clothes</a></h5>
-                            <p>The automated process starts as soon as your clothes go into the machine. The outcome
-                                is gleaming clothes!</p>
+                            <h5><a href="services.html">Выгодные цены</a></h5>
+                            <p>Мы предлагаем самые низкие цены!</p>
                         </div>
                     </div>
                 </div>
@@ -29,9 +27,8 @@
                             <img src="img/icon/services-icon2.svg" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Wash your clothes</a></h5>
-                            <p>The automated process starts as soon as your clothes go into the machine. The outcome
-                                is gleaming clothes!</p>
+                            <h5><a href="services.html">Предварительный заказ</a></h5>
+                            <p>Оформить заказ вы можете на удобное для вас время 24/7!</p>
                         </div>
                     </div>
                 </div>
@@ -41,9 +38,8 @@
                             <img src="img/icon/services-icon3.svg" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Get delivery</a></h5>
-                            <p>The automated process starts as soon as your clothes go into the machine. The outcome
-                                is gleaming clothes!</p>
+                            <h5><a href="services.html">Комфорт</a></h5>
+                            <p>Посадка и высадка в любой точке города!</p>
                         </div>
                     </div>
                 </div>

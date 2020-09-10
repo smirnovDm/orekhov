@@ -7,7 +7,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <router-link to="/">
-                            <img style="width: 70px" src="img/logo/finalogo3.png" alt="">
+                            <img style="width: 70px" src="img/finalogo3.png" alt="">
                         </router-link>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
@@ -17,9 +17,6 @@
                                 <ul id="navigation">
                                     <router-link to="/" tag="li" active-class="active" exact>
                                         <a>Главная</a>
-                                    </router-link>
-                                    <router-link to="/about" tag="li" active-class="active">
-                                        <a>О нас</a>
                                     </router-link>
                                     <router-link to="/book-trip" tag="li" active-class="active">
                                         <a>Заказать поездку</a>
@@ -38,7 +35,9 @@
                             <a href="#" class="header-btn1"><img src="img/icon/call.png" alt="">+38 (050) 269 27 37</a>
                             <a href="#" class="header-btn1"><img src="img/icon/call.png" alt="">+38 (096) 238 44 58</a>
                         </div>
-                        <a href="#" class="header-btn2">Заказ поездки</a>
+                        <router-link to="/book-trip" class="header-btn2">
+                            Заказ поездки
+                        </router-link>
                     </div>
                 </div>
                 <!-- Mobile Menu -->

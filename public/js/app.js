@@ -2076,7 +2076,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Header"
 });
@@ -2279,6 +2278,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AboutAreaTwo"
 });
@@ -2333,7 +2335,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -2546,13 +2547,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "OfferServices"
 });
@@ -2568,10 +2562,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -2723,32 +2713,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Layout"
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/About.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "About"
 });
 
 /***/ }),
@@ -39281,7 +39245,7 @@ var staticRenderFns = [
                   _c("div", { staticClass: "footer-tittle" }, [
                     _c("img", {
                       attrs: {
-                        src: "img/logo/finalogo3.png",
+                        src: "img/finalogo3.png",
                         width: "70px",
                         alt: ""
                       }
@@ -39440,7 +39404,7 @@ var render = function() {
               _c("router-link", { attrs: { to: "/" } }, [
                 _c("img", {
                   staticStyle: { width: "70px" },
-                  attrs: { src: "img/logo/finalogo3.png", alt: "" }
+                  attrs: { src: "img/finalogo3.png", alt: "" }
                 })
               ])
             ],
@@ -39468,18 +39432,6 @@ var render = function() {
                           }
                         },
                         [_c("a", [_vm._v("Главная")])]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        {
-                          attrs: {
-                            to: "/about",
-                            tag: "li",
-                            "active-class": "active"
-                          }
-                        },
-                        [_c("a", [_vm._v("О нас")])]
                       ),
                       _vm._v(" "),
                       _c(
@@ -39514,7 +39466,26 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _vm._m(0),
+        _c("div", { staticClass: "header-right d-none d-lg-block" }, [
+          _c(
+            "div",
+            { staticStyle: { display: "flex" } },
+            [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                { staticClass: "header-btn2", attrs: { to: "/book-trip" } },
+                [
+                  _vm._v(
+                    "\n                        Заказ поездки\n                    "
+                  )
+                ]
+              )
+            ],
+            1
+          )
+        ]),
         _vm._v(" "),
         _vm._m(1)
       ])
@@ -39526,29 +39497,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header-right d-none d-lg-block" }, [
-      _c("div", { staticStyle: { display: "flex" } }, [
-        _c(
-          "div",
-          { staticStyle: { display: "flex", "flex-direction": "column" } },
-          [
-            _c("a", { staticClass: "header-btn1", attrs: { href: "#" } }, [
-              _c("img", { attrs: { src: "img/icon/call.png", alt: "" } }),
-              _vm._v("+38 (050) 269 27 37")
-            ]),
-            _vm._v(" "),
-            _c("a", { staticClass: "header-btn1", attrs: { href: "#" } }, [
-              _c("img", { attrs: { src: "img/icon/call.png", alt: "" } }),
-              _vm._v("+38 (096) 238 44 58")
-            ])
-          ]
-        ),
+    return _c(
+      "div",
+      { staticStyle: { display: "flex", "flex-direction": "column" } },
+      [
+        _c("a", { staticClass: "header-btn1", attrs: { href: "#" } }, [
+          _c("img", { attrs: { src: "img/icon/call.png", alt: "" } }),
+          _vm._v("+38 (050) 269 27 37")
+        ]),
         _vm._v(" "),
-        _c("a", { staticClass: "header-btn2", attrs: { href: "#" } }, [
-          _vm._v("Заказ поездки")
+        _c("a", { staticClass: "header-btn1", attrs: { href: "#" } }, [
+          _c("img", { attrs: { src: "img/icon/call.png", alt: "" } }),
+          _vm._v("+38 (096) 238 44 58")
         ])
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -39794,72 +39757,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    {
-      staticClass: "about-area2 pb-bottom",
-      staticStyle: { "margin-top": "60px" }
-    },
-    [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row align-items-center" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-4 col-md-12" }, [
-            _c(
-              "div",
-              { staticClass: "about-caption mb-50" },
-              [
-                _vm._m(1),
-                _vm._v(" "),
-                _c("p", { staticClass: "mb-20" }, [
-                  _vm._v(
-                    "\n                        Опыт и профессионализм не вызывает сомнений.\n                        Великолепный сервис и внимание к каждому клиенту-наше кредо.\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "mb-30" }, [
-                  _vm._v(
-                    "\n                        Сотрудничество с нашей компанией-это не только комфорт и спокойствие во время поездки,но и доступные цены на все виды услуг.\n                        Большинство наших клиентов после знакомства с нашей компанией, становятся нашими постоянными клиентами.\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  { staticClass: "btn", attrs: { to: "/about" } },
-                  [
-                    _vm._v(
-                      "\n                        О нас\n                    "
-                    )
-                  ]
-                )
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ]
-  )
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-6 col-md-12" }, [
-      _c("div", { staticClass: "about-img " }, [
-        _c("img", { attrs: { src: "img/gallery/about1.png", alt: "" } })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section-tittle mb-25" }, [
-      _c("h2", [_vm._v("О нас")])
-    ])
+    return _c(
+      "section",
+      {
+        staticClass: "about-area2 pb-bottom",
+        staticStyle: { "margin-top": "60px" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row align-items-center" }, [
+            _c("div", { staticClass: "col-lg-5 col-md-12" }, [
+              _c("div", { staticClass: "about-img " }, [
+                _c("img", { attrs: { src: "img/gallery/about1.png", alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-7 col-md-12" }, [
+              _c("div", { staticClass: "about-caption mb-50" }, [
+                _c("div", { staticClass: "section-tittle mb-25" }, [
+                  _c("h2", [_vm._v("О нас")])
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-20" }, [
+                  _vm._v(
+                    "\n                        Наша транспортная компания предоставляет услуги - пассажирские перевозки по Днепропетровску\n                        и всей Украине.\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-20" }, [
+                  _vm._v(
+                    "\n                        Пассажирские перевозки выполняются профессиональными и вежливыми водителями, которые\n                        быстро и благополучно доставят Вас в пункт назначения.\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-30" }, [
+                  _vm._v(
+                    "\n                        Сотрудничество с нашей компанией - это не только комфорт и спокойствие во время поездки,но и\n                        доступные цены на все виды услуг.\n                        Большинство наших клиентов после знакомства с нашей компанией, становятся нашими постоянными\n                        клиентами.\n                    "
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -39980,9 +39928,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "row justify-content-center" }, [
             _c("div", { staticClass: "col-xl-7 col-lg-8" }, [
               _c("div", { staticClass: "section-tittle text-center mb-55" }, [
-                _c("span", { staticClass: "element" }, [_vm._v("Fun Fact")]),
-                _vm._v(" "),
-                _c("h2", [_vm._v("Company achievement")])
+                _c("h2", [_vm._v("Наши достижения")])
               ])
             ])
           ]),
@@ -39991,13 +39937,9 @@ var staticRenderFns = [
             _c("div", { staticClass: "col-lg-4 col-md-6 col-sm-6" }, [
               _c("div", { staticClass: "single-cat text-center" }, [
                 _c("div", { staticClass: "cat-cap" }, [
-                  _c("span", [_vm._v("4000")]),
+                  _c("span", [_vm._v("3200+")]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "The automated process starts as soon as your clothes go into the machine."
-                    )
-                  ])
+                  _c("p", [_vm._v("Клиентов воспользовались нашими услугами")])
                 ])
               ])
             ]),
@@ -40005,13 +39947,9 @@ var staticRenderFns = [
             _c("div", { staticClass: "col-lg-4 col-md-6 col-sm-6" }, [
               _c("div", { staticClass: "single-cat text-center" }, [
                 _c("div", { staticClass: "cat-cap" }, [
-                  _c("span", [_vm._v("300+")]),
+                  _c("span", [_vm._v("350+")]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "The automated process starts as soon as your clothes go into the machine."
-                    )
-                  ])
+                  _c("p", [_vm._v("Поездок по всей Украине")])
                 ])
               ])
             ]),
@@ -40019,13 +39957,9 @@ var staticRenderFns = [
             _c("div", { staticClass: "col-lg-4 col-md-6 col-sm-6" }, [
               _c("div", { staticClass: "single-cat text-center" }, [
                 _c("div", { staticClass: "cat-cap" }, [
-                  _c("span", [_vm._v("95%")]),
+                  _c("span", [_vm._v("100%")]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "The automated process starts as soon as your clothes go into the machine."
-                    )
-                  ])
+                  _c("p", [_vm._v("Довольных клиентов")])
                 ])
               ])
             ])
@@ -40275,9 +40209,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "row justify-content-center" }, [
           _c("div", { staticClass: "col-xl-7 col-lg-8" }, [
             _c("div", { staticClass: "section-tittle text-center mb-55" }, [
-              _c("span", { staticClass: "element" }, [_vm._v("Services")]),
-              _vm._v(" "),
-              _c("h2", [_vm._v("Services we offer")])
+              _c("h2", [_vm._v("Что мы предлагаем")])
             ])
           ])
         ]),
@@ -40287,7 +40219,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "single-offers" }, [
               _c("img", {
                 staticClass: " w-100",
-                attrs: { src: "img/gallery/offers1.png", alt: "" }
+                attrs: { src: "img/IMG_4881.JPG", alt: "" }
               })
             ])
           ]),
@@ -40300,16 +40232,10 @@ var staticRenderFns = [
               }),
               _vm._v(" "),
               _c("div", { staticClass: "offers-caption text-center" }, [
-                _c("div", { staticClass: "cat-icon" }, [
-                  _c("img", {
-                    attrs: { src: "img/icon/offers-icon1.png", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "cat-cap" }, [
                   _c("h5", [
                     _c("a", { attrs: { href: "services.html" } }, [
-                      _vm._v("Cloth laundry")
+                      _vm._v("Комфортабельные авто")
                     ])
                   ]),
                   _vm._v(" "),
@@ -40331,16 +40257,10 @@ var staticRenderFns = [
               }),
               _vm._v(" "),
               _c("div", { staticClass: "offers-caption text-center" }, [
-                _c("div", { staticClass: "cat-icon" }, [
-                  _c("img", {
-                    attrs: { src: "img/icon/offers-icon1.png", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "cat-cap" }, [
                   _c("h5", [
                     _c("a", { attrs: { href: "services.html" } }, [
-                      _vm._v("Cloth ironing")
+                      _vm._v("Поездки по всей Украине")
                     ])
                   ]),
                   _vm._v(" "),
@@ -40358,7 +40278,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "single-offers" }, [
               _c("img", {
                 staticClass: " w-100",
-                attrs: { src: "img/gallery/offers4.png", alt: "" }
+                attrs: { src: "img/ukraine.png", alt: "" }
               })
             ])
           ])
@@ -40397,15 +40317,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "section",
-      { staticClass: "services-area pt-top border-bottom pb-20 mb-60" },
+      { staticClass: "services-area pt-top border-bottom pb-40 mb-60" },
       [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row justify-content-center" }, [
             _c("div", { staticClass: "col-xl-7 col-lg-8" }, [
               _c("div", { staticClass: "section-tittle text-center mb-55" }, [
-                _c("span", { staticClass: "element" }, [_vm._v("Наш процесс")]),
-                _vm._v(" "),
-                _c("h2", [_vm._v("Как мы работаем")])
+                _c("h2", [_vm._v("Наши преимущества")])
               ])
             ])
           ]),
@@ -40422,15 +40340,11 @@ var staticRenderFns = [
                 _c("div", { staticClass: "cat-cap" }, [
                   _c("h5", [
                     _c("a", { attrs: { href: "services.html" } }, [
-                      _vm._v("We collect your clothes")
+                      _vm._v("Выгодные цены")
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "The automated process starts as soon as your clothes go into the machine. The outcome\n                            is gleaming clothes!"
-                    )
-                  ])
+                  _c("p", [_vm._v("Мы предлагаем самые низкие цены!")])
                 ])
               ])
             ]),
@@ -40446,13 +40360,13 @@ var staticRenderFns = [
                 _c("div", { staticClass: "cat-cap" }, [
                   _c("h5", [
                     _c("a", { attrs: { href: "services.html" } }, [
-                      _vm._v("Wash your clothes")
+                      _vm._v("Предварительный заказ")
                     ])
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "The automated process starts as soon as your clothes go into the machine. The outcome\n                            is gleaming clothes!"
+                      "Оформить заказ вы можете на удобное для вас время 24/7!"
                     )
                   ])
                 ])
@@ -40470,15 +40384,11 @@ var staticRenderFns = [
                 _c("div", { staticClass: "cat-cap" }, [
                   _c("h5", [
                     _c("a", { attrs: { href: "services.html" } }, [
-                      _vm._v("Get delivery")
+                      _vm._v("Комфорт")
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "The automated process starts as soon as your clothes go into the machine. The outcome\n                            is gleaming clothes!"
-                    )
-                  ])
+                  _c("p", [_vm._v("Посадка и высадка в любой точке города!")])
                 ])
               ])
             ])
@@ -40554,7 +40464,7 @@ var render = function() {
                         {
                           staticClass: "btn hero-btn",
                           attrs: {
-                            to: "/services",
+                            to: "/book-trip",
                             "data-animation": "fadeInLeft",
                             "data-delay": "0.7s"
                           }
@@ -40657,44 +40567,6 @@ var render = function() {
       _c("router-view"),
       _vm._v(" "),
       _c("TheFooter")
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=template&id=520b5d54&":
-/*!***************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/About.vue?vue&type=template&id=520b5d54& ***!
-  \***************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "main",
-    [
-      _c("AboutAreaTwo"),
-      _vm._v(" "),
-      _c("ServicesArea"),
-      _vm._v(" "),
-      _c("CallUs"),
-      _vm._v(" "),
-      _c("CompanyAchievement"),
-      _vm._v(" "),
-      _c("MapArea")
     ],
     1
   )
@@ -57457,7 +57329,6 @@ var map = {
 	"./components/section/SliderAreaOne.vue": "./resources/js/components/section/SliderAreaOne.vue",
 	"./components/section/SliderAreaTwo.vue": "./resources/js/components/section/SliderAreaTwo.vue",
 	"./layout/Default.vue": "./resources/js/layout/Default.vue",
-	"./pages/About.vue": "./resources/js/pages/About.vue",
 	"./pages/BookTrip.vue": "./resources/js/pages/BookTrip.vue",
 	"./pages/Contact.vue": "./resources/js/pages/Contact.vue",
 	"./pages/Main.vue": "./resources/js/pages/Main.vue"
@@ -58679,75 +58550,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/pages/About.vue":
-/*!**************************************!*\
-  !*** ./resources/js/pages/About.vue ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _About_vue_vue_type_template_id_520b5d54___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./About.vue?vue&type=template&id=520b5d54& */ "./resources/js/pages/About.vue?vue&type=template&id=520b5d54&");
-/* harmony import */ var _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About.vue?vue&type=script&lang=js& */ "./resources/js/pages/About.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _About_vue_vue_type_template_id_520b5d54___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _About_vue_vue_type_template_id_520b5d54___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/pages/About.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/pages/About.vue?vue&type=script&lang=js&":
-/*!***************************************************************!*\
-  !*** ./resources/js/pages/About.vue?vue&type=script&lang=js& ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./About.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/pages/About.vue?vue&type=template&id=520b5d54&":
-/*!*********************************************************************!*\
-  !*** ./resources/js/pages/About.vue?vue&type=template&id=520b5d54& ***!
-  \*********************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_520b5d54___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./About.vue?vue&type=template&id=520b5d54& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=template&id=520b5d54&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_520b5d54___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_520b5d54___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./resources/js/pages/BookTrip.vue":
 /*!*****************************************!*\
   !*** ./resources/js/pages/BookTrip.vue ***!
@@ -59005,11 +58807,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _pages_Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/Main */ "./resources/js/pages/Main.vue");
-/* harmony import */ var _pages_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/About */ "./resources/js/pages/About.vue");
-/* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/Contact */ "./resources/js/pages/Contact.vue");
-/* harmony import */ var _pages_BookTrip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/BookTrip */ "./resources/js/pages/BookTrip.vue");
-/* harmony import */ var _layout_Default__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../layout/Default */ "./resources/js/layout/Default.vue");
-
+/* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/Contact */ "./resources/js/pages/Contact.vue");
+/* harmony import */ var _pages_BookTrip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/BookTrip */ "./resources/js/pages/BookTrip.vue");
+/* harmony import */ var _layout_Default__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../layout/Default */ "./resources/js/layout/Default.vue");
 
 
 
@@ -59019,35 +58819,27 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var routes = [{
   path: '/',
-  component: _layout_Default__WEBPACK_IMPORTED_MODULE_6__["default"],
+  component: _layout_Default__WEBPACK_IMPORTED_MODULE_5__["default"],
   children: [{
     path: '',
     name: 'main',
     component: _pages_Main__WEBPACK_IMPORTED_MODULE_2__["default"]
   }]
 }, {
-  path: '/about',
-  component: _layout_Default__WEBPACK_IMPORTED_MODULE_6__["default"],
-  children: [{
-    path: '',
-    name: 'about',
-    component: _pages_About__WEBPACK_IMPORTED_MODULE_3__["default"]
-  }]
-}, {
   path: '/contact',
-  component: _layout_Default__WEBPACK_IMPORTED_MODULE_6__["default"],
+  component: _layout_Default__WEBPACK_IMPORTED_MODULE_5__["default"],
   children: [{
     path: '',
     name: 'contact',
-    component: _pages_Contact__WEBPACK_IMPORTED_MODULE_4__["default"]
+    component: _pages_Contact__WEBPACK_IMPORTED_MODULE_3__["default"]
   }]
 }, {
   path: '/book-trip',
-  component: _layout_Default__WEBPACK_IMPORTED_MODULE_6__["default"],
+  component: _layout_Default__WEBPACK_IMPORTED_MODULE_5__["default"],
   children: [{
     path: '',
     name: 'BookTrip',
-    component: _pages_BookTrip__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _pages_BookTrip__WEBPACK_IMPORTED_MODULE_4__["default"]
   }]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -59176,7 +58968,7 @@ var actions = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Program files\OpenServer\domains\orekhov.test\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\OSPanel\domains\orekhov\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })

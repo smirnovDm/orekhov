@@ -10,7 +10,7 @@
                             <div class="hero__caption">
                                 <h1 data-animation="fadeInLeft" data-delay="0.2s">EXPRESS</h1>
                                 <p data-animation="fadeInLeft" data-delay="0.4s">ПАССАЖИРСКИЕ ПЕРЕВОЗКИ</p>
-                                <router-link to="/services"
+                                <router-link to="/book-trip"
                                              class="btn hero-btn"
                                              data-animation="fadeInLeft"
                                              data-delay="0.7s"

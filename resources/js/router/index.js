@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Main from '../pages/Main';
-import About from '../pages/About';
 import Contact from '../pages/Contact';
 import BookTrip from '../pages/BookTrip';
 import Default from '../layout/Default';
@@ -16,15 +15,6 @@ const routes = [
             path: '',
             name: 'main',
             component: Main,
-        }],
-    },
-    {
-        path: '/about',
-        component: Default,
-        children: [{
-            path: '',
-            name: 'about',
-            component: About,
         }],
     },
     {

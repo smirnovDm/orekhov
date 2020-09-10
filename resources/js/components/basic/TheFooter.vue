@@ -9,7 +9,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-tittle">
-                                    <img src="img/logo/finalogo3.png" width="70px" alt="">
+                                    <img src="img/finalogo3.png" width="70px" alt="">
                                     <h4 style="display: inline-block">Express</h4>
                                 </div>
                                 <div class="footer-tittle">

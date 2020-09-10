@@ -6,8 +6,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <span class="element">Fun Fact</span>
-                        <h2>Company achievement</h2>
+                        <h2>Наши достижения</h2>
                     </div>
                 </div>
             </div>
@@ -15,24 +14,24 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-cat text-center">
                         <div class="cat-cap">
-                            <span>4000</span>
-                            <p>The automated process starts as soon as your clothes go into the machine.</p>
+                            <span>3200+</span>
+                            <p>Клиентов воспользовались нашими услугами</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-cat text-center">
                         <div class="cat-cap">
-                            <span>300+</span>
-                            <p>The automated process starts as soon as your clothes go into the machine.</p>
+                            <span>350+</span>
+                            <p>Поездок по всей Украине</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-cat text-center">
                         <div class="cat-cap">
-                            <span>95%</span>
-                            <p>The automated process starts as soon as your clothes go into the machine.</p>
+                            <span>100%</span>
+                            <p>Довольных клиентов</p>
                         </div>
                     </div>
                 </div>
