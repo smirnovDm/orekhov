@@ -12,36 +12,35 @@
             <div class="row no-gutters">
                 <div class="col-lg-6 col-md-6">
                     <div class="single-offers">
-                        <img src="img/IMG_4881.JPG" alt="" class=" w-100">
+                        <img src="img/dfo3ghn1.jpg" alt="" class=" w-100">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single-offers">
-                        <img src="img/gallery/offers2.png" alt="" class=" w-100">
+                        <img src="img/offers2.png" alt="" class=" w-100">
                         <div class="offers-caption text-center">
                             <div class="cat-cap">
                                 <h5><a href="services.html">Комфортабельные авто</a></h5>
-                                <p>The automated process starts as soon as your clothes go into the machine. The
-                                    outcome is gleaming clothes!!</p>
+                                <p>Mercedes-Benz Viano — семейство автомобилей которые обеспечат ваш комфорт на
+                                    протяжении всей поездки.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single-offers">
-                        <img src="img/gallery/offers2.png" alt="" class=" w-100">
+                        <img src="img/offers2.png" alt="" class=" w-100">
                         <div class="offers-caption text-center">
                             <div class="cat-cap">
                                 <h5><a href="services.html">Поездки по всей Украине</a></h5>
-                                <p>The automated process starts as soon as your clothes go into the machine. The
-                                    outcome is gleaming clothes!!</p>
+                                <p>Мы доставим Вас в любую точку Украины за короткий промежуток вермени.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single-offers">
-                        <img src="img/ukraine.png" alt="" class=" w-100">
+                        <img src="img/hbsdfnhki1.jpg" alt="" class=" w-100">
                     </div>
                 </div>
             </div>

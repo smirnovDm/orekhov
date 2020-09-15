@@ -4,6 +4,7 @@ import Main from '../pages/Main';
 import Contact from '../pages/Contact';
 import BookTrip from '../pages/BookTrip';
 import Default from '../layout/Default';
+import Directions from '../pages/Directions';
 
 Vue.use(Router);
 
@@ -24,6 +25,15 @@ const routes = [
             path: '',
             name: 'contact',
             component: Contact,
+        }],
+    },
+    {
+        path: '/directions',
+        component: Default,
+        children: [{
+            path: '',
+            name: 'directions',
+            component: Directions,
         }],
     },
     {

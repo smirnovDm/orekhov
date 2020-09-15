@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="row">
         <div class="col-sm-6">
             <div class="form-group">
                 Выбрать пункт посадки:
@@ -34,32 +34,41 @@
         </div>
         <div class="col-sm-6">
             <div class="form-group">
-                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Укажите Ваше имя">
+                <input class="form-control valid"
+                       name="name"
+                       id="name"
+                       type="text"
+                       onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'Укажите Ваше имя'"
+                       placeholder="Укажите Ваше имя">
             </div>
         </div>
         <div class="col-sm-6">
             <div class="form-group">
-                <input class="form-control valid" name="number" id="phone" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone'" placeholder="Укажите Ваш телефон">
+                <input class="form-control valid"
+                       name="number"
+                       id="phone"
+                       type="number"
+                       onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'Укажите Ваш телефон'"
+                       placeholder="Укажите Ваш телефон">
             </div>
         </div>
-        <div class="col-sm-6">
-            <p>Ебануть здесь временной барабан</p>
-        </div>
-
     </div>
 </template>
 
 <script>
-import Multiselect from 'vue-multiselect'
-export default {
-    name: "form-special",
-    components: {Multiselect},
-    data(){
-      return {
-          options: ['list', 'of', 'options'],
-      };
-    },
-}
+    import Multiselect from 'vue-multiselect'
+
+    export default {
+        name: "form-special",
+        components: {Multiselect},
+        data() {
+            return {
+                options: ['list', 'of', 'options'],
+            };
+        },
+    }
 </script>
 
 <style scoped>
