@@ -58968,7 +58968,7 @@ var actions = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\OSPanel\domains\orekhov\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Program files\OpenServer\domains\orekhov.test\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
