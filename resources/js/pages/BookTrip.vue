@@ -1,9 +1,9 @@
 <template>
     <main>
-        <section class="contact-section">
+        <section class="pt-50">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
+                <div class="row justify-content-around">
+                    <div class="col-8">
                         <h2 class="contact-title">Заказать поездку</h2>
                     </div>
                     <div class="col-lg-8">
@@ -12,7 +12,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        Откуда?
+                                        Откуда
                                         <multiselect
                                             v-if="loadAll"
                                             v-model="selectedCityFrom"
@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        Куда?
+                                        Куда
                                         <multiselect
                                             v-if="loadAll"
                                             v-model="selectedCityTo"
@@ -45,41 +45,54 @@
                                             placeholder="Выбрать направление"
                                             @input="onChange"
                                         ></multiselect>
-                                        </div>
+                                    </div>
                                 </div>
-<!--                                                          Generic-->
-                                <div class="col-12">
+                                <div class="col-sm-12">
                                     <booking-form :type="formType"></booking-form>
                                 </div>
+                                <div class="col-sm-6">
+                                    Время отправки
+                                    <smooth-picker
+                                        ref="smoothPicker"
+                                        :data="data"
+                                        :change="dataChange"/>
+                                </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                            <div class="form-group mt-3 text-center">
+                                <button
+                                    type="submit"
+                                    class="button button-contactForm boxed-btn">
+                                    Заказать
+                                </button>
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-3 offset-lg-1">
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-home"></i></span>
-                            <div class="media-body">
-                                <h3>Buttonwood, California.</h3>
-                                <p>Rosemead, CA 91770</p>
-                            </div>
-                        </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                            <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
-                                <p>Mon to Fri 9am to 6pm</p>
-                            </div>
-                        </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-email"></i></span>
-                            <div class="media-body">
-                                <h3>support@colorlib.com</h3>
-                                <p>Send us your query anytime!</p>
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="col-lg-3 offset-lg-1">-->
+<!--                        <div class="media contact-info">-->
+<!--                            <span class="contact-info__icon"><i class="ti-home"></i></span>-->
+<!--                            <div class="media-body">-->
+<!--                                <h3>ул. Кольцевая 12, г. Орехов, Украина. 70500</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="media contact-info">-->
+<!--                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>-->
+<!--                            <div class="media-body">-->
+<!--                                <h3>+38 (096) 238 44 58</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="media contact-info">-->
+<!--                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>-->
+<!--                            <div class="media-body">-->
+<!--                                <h3>+38 (050) 269 27 37</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="media contact-info">-->
+<!--                            <span class="contact-info__icon"><i class="ti-email"></i></span>-->
+<!--                            <div class="media-body">-->
+<!--                                <h3>express-orekhov@ukr.net</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
         </section>
@@ -87,19 +100,45 @@
 </template>
 
 <script>
-    import Multiselect from 'vue-multiselect'
+    import Multiselect from 'vue-multiselect';
     import {mapGetters, mapActions} from 'vuex';
-    import BookingForm from "../components/booking-form/booking-form";
+
     export default {
         name: "BookTrip",
-        components: {BookingForm, Multiselect},
+        components: {Multiselect},
         data() {
+            const nowYear = (new Date()).getFullYear()
+            const years = []
+            for (let i = 1991; i <= nowYear; i++) {
+                years.push(i)
+            }
+
             return {
                 value: null,
                 options: ['list', 'of', 'options'],
                 selectedCityFrom: "",
                 selectedCityTo: "",
                 formType: 'default',
+                dataTime: {
+                    'hour': 1,
+                    'minute': 0
+                },
+                data: [
+                    {
+                        currentIndex: 0,
+                        flex: 3,
+                        list: ['1', '2', '3', '4'],
+                        textAlign: 'center',
+                        className: 'row-group'
+                    },
+                    {
+                        currentIndex: 0,
+                        flex: 3,
+                        list: ['0', '30'],
+                        textAlign: 'center',
+                        className: 'row-group'
+                    }
+                ]
             }
         },
         computed: {
@@ -107,19 +146,31 @@
                 loadAll: 'cities/all',
             })
         },
-        created(){
+        created() {
             this.getCities();
         },
         methods: {
             ...mapActions({
-               getCities: 'cities/load',
+                getCities: 'cities/load',
             }),
-            onChange(){
-                if(this.selectedCityFrom && this.selectedCityTo){
+            dataChange(gIndex, iIndex) {
+                if (gIndex == 0) {
+                    this.dataTime['hour'] = iIndex + 1;
+                } else {
+                    if (iIndex == 1) {
+                        this.dataTime['minute'] = 30;
+                    } else {
+                        this.dataTime['minute'] = 0;
+                    }
+                }
+                console.info(this.dataTime)
+            },
+            onChange() {
+                if (this.selectedCityFrom && this.selectedCityTo) {
                     let cities = [];
                     cities.push(this.selectedCityFrom.name);
                     cities.push(this.selectedCityTo.name);
-                    if(cities.indexOf('Орехов') != -1 && cities.indexOf('Запорожье') != -1){
+                    if (cities.indexOf('Орехов') != -1 && cities.indexOf('Запорожье') != -1) {
                         return this.formType = 'special';
                     }
                 }
@@ -132,6 +183,156 @@
 <style scoped>
     .contact-section {
         padding-top: 40px;
+    }
+</style>
+
+<style>
+    .smooth-picker[data-v-a1dc87f8] {
+        font-size: 1rem;
+        height: 10em;
+        position: relative;
+        background-color: #fff;
+        overflow: hidden
+    }
+
+    .smooth-picker .smooth-list[data-v-a1dc87f8] {
+        height: 6.25em;
+        position: relative;
+        top: 4em
+    }
+
+    .smooth-picker .smooth-item[data-v-a1dc87f8] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        will-change: transform;
+        contain: strict;
+        height: 2em;
+        font-size: 1.5em
+    }
+
+    .smooth-picker .smooth-handle-layer[data-v-a1dc87f8] {
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 2px);
+        left: 0;
+        right: 0;
+        top: -1px;
+        bottom: -1px
+    }
+
+    .smooth-picker .smooth-handle-layer .smooth-top[data-v-a1dc87f8] {
+        border-bottom: 1px solid #c8c7cc;
+        background: linear-gradient(180deg, #fff 10%, hsla(0, 0%, 100%, .7));
+        -webkit-transform: translateZ(5.625em);
+        transform: translateZ(5.625em)
+    }
+
+    .smooth-picker .smooth-handle-layer .smooth-middle[data-v-a1dc87f8] {
+        height: 3em
+    }
+
+    .smooth-picker .smooth-handle-layer .smooth-bottom[data-v-a1dc87f8] {
+        border-top: 1px solid #c8c7cc;
+        background: linear-gradient(0deg, #fff 10%, hsla(0, 0%, 100%, .7));
+        -webkit-transform: translateZ(5.625em);
+        transform: translateZ(5.625em)
+    }
+
+    .flex-box[data-v-a1dc87f8] {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .flex-box.direction-column[data-v-a1dc87f8] {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .flex-box.direction-row[data-v-a1dc87f8] {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    .flex-box .flex-1[data-v-a1dc87f8] {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1
+    }
+
+    .flex-box .flex-2[data-v-a1dc87f8] {
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2
+    }
+
+    .flex-box .flex-3[data-v-a1dc87f8] {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3
+    }
+
+    .flex-box .flex-4[data-v-a1dc87f8] {
+        -webkit-flex: 4;
+        -ms-flex: 4;
+        flex: 4
+    }
+
+    .flex-box .flex-5[data-v-a1dc87f8] {
+        -webkit-flex: 5;
+        -ms-flex: 5;
+        flex: 5
+    }
+
+    .flex-box .flex-6[data-v-a1dc87f8] {
+        -webkit-flex: 6;
+        -ms-flex: 6;
+        flex: 6
+    }
+
+    .flex-box .flex-7[data-v-a1dc87f8] {
+        -webkit-flex: 7;
+        -ms-flex: 7;
+        flex: 7
+    }
+
+    .flex-box .flex-8[data-v-a1dc87f8] {
+        -webkit-flex: 8;
+        -ms-flex: 8;
+        flex: 8
+    }
+
+    .flex-box .flex-9[data-v-a1dc87f8] {
+        -webkit-flex: 9;
+        -ms-flex: 9;
+        flex: 9
+    }
+
+    .flex-box .flex-10[data-v-a1dc87f8] {
+        -webkit-flex: 10;
+        -ms-flex: 10;
+        flex: 10
+    }
+
+    .flex-box .flex-11[data-v-a1dc87f8] {
+        -webkit-flex: 11;
+        -ms-flex: 11;
+        flex: 11
+    }
+
+    .flex-box .flex-12[data-v-a1dc87f8] {
+        -webkit-flex: 12;
+        -ms-flex: 12;
+        flex: 12
     }
 </style>
 

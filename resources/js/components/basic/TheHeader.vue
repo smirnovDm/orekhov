@@ -24,6 +24,9 @@
                                     <router-link to="/contact" tag="li" active-class="active">
                                         <a>Контакты</a>
                                     </router-link>
+                                    <router-link to="/directions" tag="li" active-class="active">
+                                        <a>Направления</a>
+                                    </router-link>
                                 </ul>
                             </nav>
                         </div>
