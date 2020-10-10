@@ -3,7 +3,7 @@ import { router } from './router';
 import Vue from 'vue';
 import App from "./components/App";
 import store from "./store";
-
+import 'vue2-timepicker/dist/VueTimepicker.css'
 import SmoothPicker from 'vue-smooth-picker'
 Vue.use(SmoothPicker)
 

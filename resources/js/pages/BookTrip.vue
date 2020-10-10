@@ -12,7 +12,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        Откуда
+                                        <div style="padding-bottom: 5px">Откуда <img src="img/pin.svg" style="height: 2rem; margin-top: -10px"></div>
                                         <multiselect
                                             v-if="loadAll"
                                             v-model="selectedCityFrom"
@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        Куда
+                                        <div style="padding-bottom: 5px">Куда <img src="img/pin.svg" style="height: 2rem; margin-top: -10px"></div>
                                         <multiselect
                                             v-if="loadAll"
                                             v-model="selectedCityTo"
@@ -51,14 +51,19 @@
                                     <booking-form :type="formType"></booking-form>
                                 </div>
                                 <div class="col-sm-6">
-                                    Время отправки
-                                    <smooth-picker
-                                        ref="smoothPicker"
-                                        :data="data"
-                                        :change="dataChange"/>
+                                    <div style="padding-bottom: 5px">Время отправки</div>
+                                    <vue-timepicker v-model="timeValue" :minute-interval="30" @input="selectedTime"></vue-timepicker>
+<!--                                    <smooth-picker-->
+<!--                                        ref="smoothPicker"-->
+<!--                                        :data="data"-->
+<!--                                        :change="dataChange"/>-->
+                                </div>
+                                <div class="col-sm-6">
+                                    <div style="padding-bottom: 5px">Дата отправки</div>
+                                    <datepicker :value="date" :language="ru" monday-first v-on:selected="selectedDate"></datepicker>
                                 </div>
                             </div>
-                            <div class="form-group mt-3 text-center">
+                            <div class="form-group mt-4 text-center">
                                 <button
                                     type="submit"
                                     class="button button-contactForm boxed-btn">
@@ -67,32 +72,6 @@
                             </div>
                         </form>
                     </div>
-<!--                    <div class="col-lg-3 offset-lg-1">-->
-<!--                        <div class="media contact-info">-->
-<!--                            <span class="contact-info__icon"><i class="ti-home"></i></span>-->
-<!--                            <div class="media-body">-->
-<!--                                <h3>ул. Кольцевая 12, г. Орехов, Украина. 70500</h3>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="media contact-info">-->
-<!--                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>-->
-<!--                            <div class="media-body">-->
-<!--                                <h3>+38 (096) 238 44 58</h3>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="media contact-info">-->
-<!--                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>-->
-<!--                            <div class="media-body">-->
-<!--                                <h3>+38 (050) 269 27 37</h3>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="media contact-info">-->
-<!--                            <span class="contact-info__icon"><i class="ti-email"></i></span>-->
-<!--                            <div class="media-body">-->
-<!--                                <h3>express-orekhov@ukr.net</h3>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
                 </div>
             </div>
         </section>
@@ -102,10 +81,13 @@
 <script>
     import Multiselect from 'vue-multiselect';
     import {mapGetters, mapActions} from 'vuex';
+    import Datepicker from 'vuejs-datepicker';
+    import {ru} from 'vuejs-datepicker/dist/locale'
+    import VueTimepicker from 'vue2-timepicker'
 
     export default {
         name: "BookTrip",
-        components: {Multiselect},
+        components: {Multiselect, Datepicker, VueTimepicker },
         data() {
             const nowYear = (new Date()).getFullYear()
             const years = []
@@ -114,20 +96,29 @@
             }
 
             return {
+                timeValue: {
+                    HH: '14',
+                    mm: '00'
+                },
+                ru: ru,
+                date: new Date(),
                 value: null,
                 options: ['list', 'of', 'options'],
                 selectedCityFrom: "",
                 selectedCityTo: "",
                 formType: 'default',
                 dataTime: {
-                    'hour': 1,
-                    'minute': 0
+                    'hour': 14,
+                    'minute': 0,
+                    'date': new Date()
                 },
                 data: [
                     {
-                        currentIndex: 0,
+                        currentIndex: 13,
                         flex: 3,
-                        list: ['1', '2', '3', '4'],
+                        list: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+                            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                            '21', '22', '23', '24'],
                         textAlign: 'center',
                         className: 'row-group'
                     },
@@ -153,6 +144,13 @@
             ...mapActions({
                 getCities: 'cities/load',
             }),
+            selectedDate(date){
+                this.dataTime['date'] = date
+            },
+            selectedTime(eventData){
+                this.dataTime['hour'] = eventData['HH'];
+                this.dataTime['minute'] = eventData['mm'];
+            },
             dataChange(gIndex, iIndex) {
                 if (gIndex == 0) {
                     this.dataTime['hour'] = iIndex + 1;
@@ -187,6 +185,15 @@
 </style>
 
 <style>
+    .vdp-datepicker input {
+        border: 1px solid #e5e6e9;
+        border-radius: 0px;
+        height: 48px;
+        padding-left: 18px;
+        font-size: 13px;
+        background: transparent;
+    }
+
     .smooth-picker[data-v-a1dc87f8] {
         font-size: 1rem;
         height: 10em;
